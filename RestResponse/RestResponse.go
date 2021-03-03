@@ -38,7 +38,7 @@ func NewErrorInternalResponse(Mode string, Status string, Message string) *RestR
 			Count:   0,
 			Status:  Status,
 			Data:    nil,
-			Message: "Not_Found",
+			Message: "Internal_Server_Error",
 		}
 	}
 
