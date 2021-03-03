@@ -4,7 +4,7 @@ import "github.com/gin-gonic/gin"
 
 type RestResponse struct {
 	Count   int         `json:"count"`
-	Status  string      `json:status"`
+	Status  string      `json:"status"`
 	Data    interface{} `json:"data"`
 	Message string      `json:"message"`
 }
@@ -51,7 +51,7 @@ func NewErrorInternalResponse(Mode string, Status string, Message string) *RestR
 	}
 }
 
-//TODO: @Ok Response
+//TODO: @Success Response
 func NewSuccessResponse(Count int, Status string, Data interface{}, Message string) *RestResponse {
 	return &RestResponse{
 		Count:   Count,
